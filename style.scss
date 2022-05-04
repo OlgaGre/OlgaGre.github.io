@@ -1,0 +1,65 @@
+@mixin square-button() {
+    width: 40px;
+    height: 50px;
+    border: solid 1px black;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+}
+
+@mixin rectangle-button() {
+    height: 50px;
+    border: solid 1px black;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+}
+
+@mixin font-title {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 44px;
+}
+
+@mixin font-letter-button {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+@mixin font-simbol-button {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.title {
+    @include font-title()
+}
+
+.square-button {
+    @include square-button();
+    //   float: left;
+}
+
+.rectangle-button {
+    //  float: left;
+    @include rectangle-button();
+}
+
+.clearfix {
+    clear: both;
+}
+
+// .button {
+//  float: none;
+// }
+.KEYBOARD {
+    display: grid;
+    grid-template-columns: repeat(14, 1fr);
+    background-color: red;
+    width: 800px;
+}
