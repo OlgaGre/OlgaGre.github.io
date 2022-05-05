@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 @mixin square-button() {
     width: 40px;
     height: 50px;
@@ -40,26 +44,31 @@
     @include font-title()
 }
 
+.textarea {
+    width: 770px;
+    margin: 10PX auto;
+}
+
 .square-button {
     @include square-button();
-    //   float: left;
+    float: left;
 }
 
-.rectangle-button {
-    //  float: left;
+.space-button {
     @include rectangle-button();
+    width: 390px;
 }
 
-.clearfix {
-    clear: both;
+.double-button {
+    @include rectangle-button();
+    width: 90px;
 }
 
-// .button {
-//  float: none;
-// }
 .KEYBOARD {
-    display: grid;
-    grid-template-columns: repeat(14, 1fr);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     background-color: red;
-    width: 800px;
+    width: 770px;
+    margin: 20px auto;
 }

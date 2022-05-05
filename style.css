@@ -1,8 +1,18 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 .title {
   font-family: 'Georgia';
   font-style: normal;
   font-weight: 400;
   font-size: 44px;
+}
+
+.textarea {
+  width: 770px;
+  margin: 10PX auto;
 }
 
 .square-button {
@@ -16,9 +26,10 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  float: left;
 }
 
-.rectangle-button {
+.space-button {
   height: 50px;
   border: solid 1px black;
   margin: 5px;
@@ -28,18 +39,33 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 390px;
 }
 
-.clearfix {
-  clear: both;
+.double-button {
+  height: 50px;
+  border: solid 1px black;
+  margin: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90px;
 }
 
 .KEYBOARD {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[14];
-      grid-template-columns: repeat(14, 1fr);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   background-color: red;
-  width: 800px;
+  width: 770px;
+  margin: 20px auto;
 }
 /*# sourceMappingURL=style.css.map */
