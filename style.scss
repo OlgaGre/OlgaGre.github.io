@@ -2,6 +2,11 @@
     box-sizing: border-box;
 }
 
+body {
+    width: 770px;
+    margin: 0 auto;
+}
+
 @mixin square-button() {
     width: 40px;
     height: 50px;
@@ -46,7 +51,16 @@
 
 .textarea {
     width: 770px;
-    margin: 10PX auto;
+    margin-top: 10px;
+}
+
+.button {
+    text-align: center;
+    justify-content: center;
+}
+
+.active {
+    background-color: green;
 }
 
 .square-button {
