@@ -60,7 +60,7 @@ body {
 }
 
 .active {
-    background-color: green;
+    background-color: white;
 }
 
 .square-button {
@@ -70,7 +70,7 @@ body {
 
 .space-button {
     @include rectangle-button();
-    width: 390px;
+    width: 340px;
 }
 
 .double-button {

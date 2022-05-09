@@ -28,7 +28,7 @@ body {
 }
 
 .active {
-  background-color: green;
+  background-color: white;
 }
 
 .square-button {
@@ -55,7 +55,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 390px;
+  width: 340px;
 }
 
 .double-button {
